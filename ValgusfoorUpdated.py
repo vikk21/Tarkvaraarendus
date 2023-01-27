@@ -20,8 +20,10 @@ running = True #Hoiab programmi tööle
 while running: #Loop
     # Check for event if user has pushed
     # any event in queue
-    for event in pygame.event.get(): # Alustab programm mis paneb akna kinni
+    for event in pygame.event.get(): # Käivitab mooduli mis sulgeb akna
         # if event is of type quit then set
         # running bool to false
         if event.type == pygame.QUIT:
             running = False
+   
+pygame.quit()
